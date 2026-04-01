@@ -514,7 +514,7 @@ _package_makepkg() {
 		fi
 	fi
 
-	if [ "$_lsteamcleint_patches" = "true"]; then
+	if [ "$_lsteamclient_patches" = "true"]; then
 		# copy lsteamclient files
 		cp -v "$_where"/lsteamclient/x86_64-unix/lsteamclient.so "${pkgdir}$_prefix"/"$_lib64name"/wine/x86_64-unix/lsteamclient.so
 		cp -v "$_where"/lsteamclient/x86_64-windows/lsteamclient.dll "${pkgdir}$_prefix"/"$_lib64name"/wine/x86_64-windows/lsteamclient.dll
